@@ -51,7 +51,17 @@ const sidebars: SidebarsConfig = {
             'module-1/week-2/exercises',
           ],
         },
-        // Week 3 content to be added
+        {
+          type: 'category',
+          label: 'Week 3: Perception Pipeline',
+          collapsed: true,
+          items: [
+            'module-1/week-3/sensor-integration',
+            'module-1/week-3/image-processing',
+            'module-1/week-3/point-cloud-processing',
+            'module-1/week-3/exercises',
+          ],
+        },
       ],
     },
     // Module 2-5 content to be added
