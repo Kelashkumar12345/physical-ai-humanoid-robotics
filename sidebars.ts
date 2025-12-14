@@ -103,7 +103,45 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
-    // Module 3-5 content to be added
+    {
+      type: 'category',
+      label: 'Module 3: Isaac Sim & RL',
+      collapsed: true,
+      items: [
+        {
+          type: 'category',
+          label: 'Week 7: Isaac Sim Basics',
+          collapsed: true,
+          items: [
+            'module-3/week-7/isaac-sim-introduction',
+            'module-3/week-7/isaac-sim-sensors',
+            'module-3/week-7/isaac-ros-bridge',
+            'module-3/week-7/exercises',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Week 8: Humanoid Robots',
+          collapsed: true,
+          items: [
+            'module-3/week-8/humanoid-models',
+            'module-3/week-8/humanoid-locomotion',
+            'module-3/week-8/exercises',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Week 9: Reinforcement Learning',
+          collapsed: true,
+          items: [
+            'module-3/week-9/isaac-gym-basics',
+            'module-3/week-9/rl-policy-training',
+            'module-3/week-9/exercises',
+          ],
+        },
+      ],
+    },
+    // Module 4-5 content to be added
     {
       type: 'category',
       label: 'Appendices',
