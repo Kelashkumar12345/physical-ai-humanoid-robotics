@@ -64,7 +64,46 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
-    // Module 2-5 content to be added
+    {
+      type: 'category',
+      label: 'Module 2: Gazebo Simulation',
+      collapsed: true,
+      items: [
+        {
+          type: 'category',
+          label: 'Week 4: Gazebo Basics',
+          collapsed: true,
+          items: [
+            'module-2/week-4/gazebo-introduction',
+            'module-2/week-4/world-building',
+            'module-2/week-4/sensor-simulation',
+            'module-2/week-4/exercises',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Week 5: Robot Models',
+          collapsed: true,
+          items: [
+            'module-2/week-5/robot-description',
+            'module-2/week-5/gazebo-plugins',
+            'module-2/week-5/turtlebot3-simulation',
+            'module-2/week-5/exercises',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Week 6: Advanced Simulation',
+          collapsed: true,
+          items: [
+            'module-2/week-6/physics-tuning',
+            'module-2/week-6/domain-randomization',
+            'module-2/week-6/exercises',
+          ],
+        },
+      ],
+    },
+    // Module 3-5 content to be added
     {
       type: 'category',
       label: 'Appendices',
