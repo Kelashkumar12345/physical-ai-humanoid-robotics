@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import CodeBlock from '@theme/CodeBlock';
 
 interface ValidatedCodeBlockProps {
   language: string;
   title?: string;
-  children: string;
+  children: ReactNode;
   showLineNumbers?: boolean;
   metastring?: string;
 }
@@ -23,6 +23,8 @@ export function ValidatedCodeBlock({
   showLineNumbers = false,
   metastring,
 }: ValidatedCodeBlockProps): JSX.Element {
+  // Ensure children is a string before processing
+  const content = typeof children === 'string' ? children : String(children);
   return (
     <CodeBlock
       language={language}
@@ -30,14 +32,14 @@ export function ValidatedCodeBlock({
       showLineNumbers={showLineNumbers}
       metastring={metastring}
     >
-      {children.trim()}
+      {content.trim()}
     </CodeBlock>
   );
 }
 
 interface TerminalOutputProps {
   prompt?: string;
-  children: string;
+  children: ReactNode;
 }
 
 /**
@@ -48,7 +50,9 @@ export function TerminalOutput({
   prompt = '$',
   children,
 }: TerminalOutputProps): JSX.Element {
-  const lines = children.trim().split('\n');
+  // Ensure children is a string before processing
+  const content = typeof children === 'string' ? children : String(children);
+  const lines = content.trim().split('\n');
 
   return (
     <div className="terminal-output">

@@ -141,7 +141,62 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
-    // Module 4-5 content to be added
+    {
+      type: 'category',
+      label: 'Module 4: Vision-Language-Action Integration',
+      collapsed: true,
+      items: [
+        {
+          type: 'category',
+          label: 'Week 10: VLA Architecture',
+          collapsed: true,
+          items: [
+            'module-4/week-10/vla-architecture',
+            'module-4/week-10/ollama-setup',
+            'module-4/week-10/vision-language-pipeline',
+            'module-4/week-10/exercises',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Week 11: VLA Applications',
+          collapsed: true,
+          items: [
+            'module-4/week-11/whisper-integration',
+            'module-4/week-11/action-generation',
+            'module-4/week-11/safety-constraints',
+            'module-4/week-11/exercises',
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Module 5: System Integration & Deployment',
+      collapsed: true,
+      items: [
+        {
+          type: 'category',
+          label: 'Week 12: System Integration',
+          collapsed: true,
+          items: [
+            'module-5/week-12/system-architecture',
+            'module-5/week-12/integration-patterns',
+            'module-5/week-12/testing-strategies',
+            'module-5/week-12/exercises',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Week 13: Deployment & Final Assessment',
+          collapsed: true,
+          items: [
+            'module-5/week-13/deployment-checklist',
+            'module-5/week-13/final-assessment',
+          ],
+        },
+      ],
+    },
     {
       type: 'category',
       label: 'Appendices',
