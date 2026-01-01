@@ -7,8 +7,8 @@ const config: Config = {
   tagline: 'A 13-Week Hands-On Course: From ROS 2 to VLA-Powered Humanoids',
   favicon: 'img/favicon.ico',
 
-  url: 'https://physical-ai-humanoid-robotics-smoky.vercel.app',
-  baseUrl: '/',
+  url: 'https://kelashkumar12345.github.io',
+  baseUrl: '/physical-ai-humanoid-robotics/',
 
   organizationName: 'kelashkumar12345',
   projectName: 'physical-ai-humanoid-robotics',
