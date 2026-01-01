@@ -2,13 +2,18 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+// Detect deployment platform
+const isVercel = process.env.VERCEL === '1';
+
 const config: Config = {
   title: 'Physical AI & Humanoid Robotics',
   tagline: 'A 13-Week Hands-On Course: From ROS 2 to VLA-Powered Humanoids',
   favicon: 'img/favicon.ico',
 
-  url: 'https://kelashkumar12345.github.io',
-  baseUrl: '/physical-ai-humanoid-robotics/',
+  url: isVercel
+    ? 'https://physical-ai-humanoid-robotics.vercel.app'
+    : 'https://kelashkumar12345.github.io',
+  baseUrl: isVercel ? '/' : '/physical-ai-humanoid-robotics/',
 
   organizationName: 'kelashkumar12345',
   projectName: 'physical-ai-humanoid-robotics',
